@@ -40,3 +40,13 @@ Step 5: Move Back to Parent Repository
 <br/> Step 7: Add Changes to Git Index
 
 <br/> Step 8: Commit Changes
+
+<br/>
+# List the details in .gitmodules file
+This command lists all the submodules present in the current repository with their paths, URL location and the branch which it is mapped in the repository. <br/>
+  **git config --file=.gitmodules -l **
+
+# Sync and update the Submodule
+$  git submodule sync <br/>
+$  git submodule update --init --recursive --remote </br>
+
