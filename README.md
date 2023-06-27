@@ -54,3 +54,13 @@ This command lists all the submodules present in the current repository with the
 $  git submodule sync <br/>
 $  git submodule update --init --recursive --remote </br>
 
+```
+git submodule deinit -f src/JTA.Web/Vue
+git rm -f src/JTA.Web/Vue
+rm -rf .git/modules/src/JTA.Web/Vue
+Before Build Commands
+git submodule init ---> For origin Commit
+git submodule update---> For Head Commit
+git submodule add -b DevOps_develop http://odsgitlab1.odsdai.netdai.com/devops-offshore/eticket-vue.git src/JTA.Web/Vue
+```
+
